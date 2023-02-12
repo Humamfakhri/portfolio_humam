@@ -1,7 +1,12 @@
 /* UTILITY */
+body {
+  padding-bottom: 500px;
+  scroll-behavior: smooth;
+}
 :root {
   --main-color: #f9043d;
   --main-hover: #b4002a;
+  --second-color: #383e4c;
 }
 * {
   font-family: 'Montserrat', sans-serif;
@@ -31,6 +36,12 @@
 /* UTILITY END */
 
 /* NAVBAR */
+.navbar {
+  transition: .2s;
+}
+.nav-bg {
+  background-color: #f3f3f3;
+}
 .nav-link::after {
   content: '';
   display: block;
@@ -61,4 +72,17 @@
 }
 .scroll {
   writing-mode: tb-rl;
+}
+
+/* TENTANG */
+.tentang {
+  padding-top: 80px;
+}
+.tentang-title::after {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 2px;
+  margin: 15px auto 0;
+  background-color: var(--main-color);
 }

@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container">
         <!-- <a class="navbar-brand fs-5 fw-bold font-playfair" href="#">
           <div class="h-brand rounded-circle border border-primary d-flex justify-content-center align-items-center">
@@ -25,10 +25,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link font-p text-uppercase me-4 active" href="index.html">Home</a>
-            <a class="nav-link font-p text-uppercase me-4" href="index.html">About</a>
-            <a class="nav-link font-p text-uppercase me-4" href="index.html">Portfolio</a>
-            <a class="nav-link font-p text-uppercase" href="index.html">Contact</a>
+            <a class="nav-link font-p text-uppercase me-4 active" href="index.html">Beranda</a>
+            <a class="nav-link font-p text-uppercase me-4" href="#tentang">Tentang</a>
+            <a class="nav-link font-p text-uppercase me-4" href="index.html">Karya</a>
+            <a class="nav-link font-p text-uppercase" href="index.html">Kontak</a>
           </div>
         </div>
       </div>
@@ -43,19 +43,65 @@
             <p class="mb-0 font-p">--- Hai, saya</p>
             <h1 class=" fw-bold f-large"><span class="color-primary ">Humam</span><br>Ibadillah Fakhri</h1>
             <p class="font-p">Saya tertarik di bidang pemrograman atau coding, salah satunya<br>sebagai <span class="color-primary font-p fw-bold">Front-End Developer</span>.</p>
-            <div class="btn bg-primary text-white mt-3 rounded-0">Lainnya</div>
+            <a href="#tentang" class="btn bg-primary text-white mt-3 rounded-0">Lainnya</a>
             <div class="scroll f-12 font-p mt-5 mb-2">SCROLL DOWN</div>
             <i class="ps-1 fa-solid fa-arrow-down-long"></i>
           </div>
           <div class="col-7 text-end p-0">
-            <img src="img/header.png" alt="Humam Ibadillah Fakhri" class="img-fluid">
+            <img src="img/hero.png" alt="Humam Ibadillah Fakhri" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
     <!-- HERO END -->
 
+    <!-- ABOUT -->
+    <section class="tentang text-center" id="tentang">
+      <div class="container">
+        <h1 class="fw-bold tentang-title d-inline-block">Tentang Saya</h1>
+        <div class="row justify-content-center mt-4">
+          <div class="col-3 mx-0">
+            <img src="img/telkom.png" alt="Telkom School and Telkom University Logos" class="img-fluid mb-3" width="80">
+            <h5 class="fw-semibold font-p">Pendidikan</h5>
+            <p class="font-p w-75 mx-auto">SMK Telkom Bandung memulai perjalanan saya di bidang IT, hingga kini berada di Telkom University.</p>
+          </div>
+          <div class="col-3 mx-0">
+            <img src="img/keyboard.png" alt="Keyboard Icon" class="img-fluid mb-3" width="80">
+            <h5 class="fw-semibold font-p">Coding</h5>
+            <p class="font-p w-75 mx-auto">Di saat waktu luang dan memiliki semangat, saya mempelajari cara membuat aplikasi, website, dll.</p>
+          </div>
+          <div class="col-3 mx-0">
+            <img src="img/game.png" alt="Game Icon" class="img-fluid mb-3" width="80">
+            <h5 class="fw-semibold font-p">Gaming</h5>
+            <p class="font-p w-75 mx-auto">Bermain game merupakan salah satu hal yang saya lakukan ketika sedang bosan.</p>
+          </div>
+          <div class="col-3 mx-0">
+            <img src="img/guitar.png" alt="Guitar Icon" class="img-fluid mb-3" width="80">
+            <h5 class="fw-semibold font-p">Musik</h5>
+            <p class="font-p w-75 mx-auto">Saya juga suka dengan musik, salah satu alat musik yang saya mainkan sehari-hari adalah gitar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT END -->
+
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function changeNavbar() {
+        var navbar = document.getElementById('navbar');
+        var scroll = window.scrollY;
+        if(scroll > 0){
+          navbar.classList.remove('bg-transparent');
+          navbar.classList.add('nav-bg');
+          navbar.classList.add('shadow-sm');
+        } else {
+          navbar.classList.add('bg-transparent');
+          navbar.classList.remove('nav-bg');
+          navbar.classList.remove('shadow-sm');
+        }
+      }
+      window.addEventListener('scroll', changeNavbar);
+    </script>
   </body>
 </html>
