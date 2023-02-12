@@ -27,8 +27,14 @@ body {
 .bg-primary:hover {
   background-color: var(--main-hover) !important;
 }
+.bg-secondary {
+  background-color: var(--second-color) !important;
+}
 .color-secondary {
-  color: #383e4c !important;
+  color: var(--second-color) !important;
+}
+.bg-abu {
+  background-color: #f3f3f3;
 }
 .f-large {
   font-size: 54px;
@@ -74,15 +80,38 @@ body {
   writing-mode: tb-rl;
 }
 
-/* TENTANG */
-.tentang {
-  padding-top: 80px;
+/* SECTION */
+section {
+  padding: 100px 0;
 }
-.tentang-title::after {
+.section-title {
+  font-size: 48px;
+}
+.section-title::after {
   content: '';
   display: block;
-  width: 15%;
+  min-width: 35px;
+  max-width: 30%;
   height: 2px;
   margin: 15px auto 0;
   background-color: var(--main-color);
+}
+
+
+/* KARYA */
+/* .karya .box {
+  border-radius: 20px;
+} */
+.karya-subtitle-kiri {
+  padding-left: 80px;
+}
+.karya-subtitle-kanan {
+  padding-left: 80px;
+}
+.karya-img {
+  background-image: linear-gradient(#62d0f6, #d4b4ff);
+}
+.karya-img-kanan{
+}
+.karya-img-kiri{
 }
