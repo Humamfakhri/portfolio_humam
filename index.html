@@ -25,25 +25,53 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link font-p text-uppercase me-4 active" href="index.html">Beranda</a>
+            <a class="nav-link font-p text-uppercase me-4 active" href="#beranda">Beranda</a>
             <a class="nav-link font-p text-uppercase me-4" href="#tentang">Tentang</a>
-            <a class="nav-link font-p text-uppercase me-4" href="index.html">Karya</a>
-            <a class="nav-link font-p text-uppercase" href="index.html">Kontak</a>
+            <a class="nav-link font-p text-uppercase me-4" href="#karya">Karya</a>
+            <a class="nav-link font-p text-uppercase" href="#kontak">Kontak</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- NAVBAR END -->
+    <!-- <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav> -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light rounded-2" tabindex="0">
+    
 
     <!-- HERO -->
-    <div class="section hero">
+    <div class="section hero" id="beranda">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col">
-            <p class="mb-0 font-p">--- Hai, saya</p>
+            <p class="mb-0 font-p">---- Hai, saya</p>
             <h1 class=" fw-bold f-large"><span class="color-primary ">Humam</span><br>Ibadillah Fakhri</h1>
             <p class="font-p">Saya tertarik di bidang pemrograman atau coding, salah satunya<br>sebagai <span class="color-primary font-p fw-bold">Front-End Developer</span>.</p>
-            <a href="#tentang" class="btn bg-primary text-white mt-3 rounded-0">Lainnya</a>
+            <div class="sosmed mt-5">
+              <a href="https://www.instagram.com/humamfakhri/"><i class="fs-4 me-3 fa-brands fa-instagram"></i></a>
+              <a href="https://line.me/ti/p/humamifakhri"><i class="fs-4 me-3 fa-brands fa-line"></i></a>
+              <a href="https://wa.me/6282113933635?text=Halo%20Humam,%20saya%20mendapatkan%20nomor%20ini%20dari%20website%20portfoliomu"><i class="fs-4 me-3 fa-brands fa-whatsapp"></i></a>
+              <a href="https://www.youtube.com/@humamfakhri9691/videos"><i class="fs-4 fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="#tentang" class="btn bg-primary text-white mt-4 rounded-0">Lainnya</a>
             <div class="scroll f-12 font-p mt-5 mb-2">SCROLL DOWN</div>
             <i class="ps-1 fa-solid fa-arrow-down-long"></i>
           </div>
@@ -97,8 +125,8 @@
               <p class="font-p text-secondary fs-5">Sebuah website berbasis LMS</p>
               <div class="btn bg-primary rounded-0 text-white mt-5">Lihat Project</div>
             </div>
-            <div class="col-6 karya-img karya-img-kanan">
-              <img src="img/rocket.png" alt="" class="img-fluid w-50">
+            <div class="col-6 karya-img karya-img-kanan d-flex align-items-center">
+              <div><img src="img/rocket.png" alt="" class="img-fluid w-50"></div>
             </div>
           </div>
         </div>
@@ -109,8 +137,8 @@
               <p class="font-p text-secondary fs-5">Platform web/aplikasi untuk mendengarkan podcast edukasi</p>
               <div class="btn bg-primary rounded-0 text-white mt-5">Lihat Project</div>
             </div>
-            <div class="col-6 karya-img karya-img-kiri">
-              <img src="img/podcast.png" alt="" class="img-fluid w-50">
+            <div class="col-6 karya-img karya-img-kiri d-flex align-items-center">
+              <div><img src="img/podcast.png" alt="" class="img-fluid w-50"></div>
             </div>
           </div>
         </div>
@@ -121,14 +149,41 @@
               <p class="font-p text-secondary fs-5">Robot smart car kecil berbasis Arduino</p>
               <div class="btn bg-primary rounded-0 text-white mt-5">Lihat Project</div>
             </div>
-            <div class="col-6 karya-img karya-img-kanan">
-              <img src="img/robot.png" alt="" class="img-fluid w-50">
+            <div class="col-6 karya-img karya-img-kanan d-flex align-items-center">
+              <div><img src="img/robot.png" alt="" class="img-fluid w-50"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- KARYA END -->
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+      <div class="container text-center">
+        <h1 class="fw-bold section-title d-inline-block">Kontak</h1>
+        <h5 class="font-p mt-3 mb-4">Biarkan saya mengetahui apa yang Anda ingin sampaikan :)</h5>
+        <form>
+          <div class="row justify-content-center">
+            <div class="mb-3 col-4 text-start">
+              <label for="nama" class="text-start form-label font-p">Nama</label>
+              <input type="email" class="text-start form-control font-p" id="nama" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3 col-4 text-start">
+              <label for="email" class="text-start form-label font-p">Alamat Email</label>
+              <input type="email" class="text-start form-control font-p" id="email">
+            </div>
+            <div class="mb-3 col-8 text-start">
+              <label for="email" class="text-start form-label font-p">Pesan</label>
+              <input type="email" class="text-start form-control font-p" id="email" style="height: 100px;">
+            </div>
+          </div>
+          <button type="submit" class="btn bg-primary text-white rounded-0 mt-4 px-5 fw-semibold">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!-- KONTAK END -->
+  </div>
 
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
