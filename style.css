@@ -1,0 +1,64 @@
+/* UTILITY */
+:root {
+  --main-color: #f9043d;
+  --main-hover: #b4002a;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #383e4c;
+}
+.f-12 {
+  font-size: 12px;
+}
+.font-p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.color-primary {
+  color: var(--main-color) !important;
+}
+.bg-primary {
+  background-color: var(--main-color) !important;
+}
+.bg-primary:hover {
+  background-color: var(--main-hover) !important;
+}
+.color-secondary {
+  color: #383e4c !important;
+}
+.f-large {
+  font-size: 54px;
+}
+/* UTILITY END */
+
+/* NAVBAR */
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  transform: scale(0);
+  transition: .2s;
+}
+.nav-link:hover::after {
+  transform: scale(1);
+}
+.active {
+  font-weight: 700;
+}
+.active::after {
+  transform: scale(1);
+}
+
+/* HERO */
+.hero {
+  background-color: #f3f3f3;
+  padding-top: 50px;
+}
+.hero small {
+  font-family: monospace;
+}
+.scroll {
+  writing-mode: tb-rl;
+}
